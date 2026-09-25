@@ -1,0 +1,7 @@
+*.ima
+*.bin
+*.cramfs
+*.so
+*.so.*
+firmware_updater/
+bmc-pull/
