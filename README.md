@@ -12,6 +12,14 @@ The script is layout-specific. It validates known original or already-patched by
 
 The repository does not include Dell firmware images. Download the original firmware from Dell, extract `VEP4600-BMC-v2.30.ima`, and run the patch locally.
 
+## Legal and safety notes
+
+This project is unofficial and is not affiliated with, endorsed by, or supported by Dell.
+
+The repository includes original tooling and factual notes only. It does not include Dell firmware images, extracted firmware files, Dell binaries, Dell source code, YAFU binaries, or decompiled code.
+
+Use this only on hardware that you own or are authorized to service. Firmware modification can void support agreements, violate license terms, damage hardware, or leave a BMC unbootable. Keep a tested recovery path.
+
 ## Patch behavior
 
 The stock firmware reads a one-byte fan-count profile from system EEPROM and stores it in `gFanNum`. On a four-fan platform, the stock policy hides or disables several Fan5 paths.
